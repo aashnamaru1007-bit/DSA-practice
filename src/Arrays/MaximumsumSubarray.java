@@ -5,7 +5,7 @@ public class MaximumsumSubarray {
     public static int maxSubArray(int[] nums) {
         int maxsum=nums[0];
         int sum=nums[0];
-        // start=o tempstart=0 end=0
+        // start=0 tempstart=0 end=0
         for(int i=1;i<nums.length;i++){
             if(sum+nums[i]>nums[i]){
                 sum=sum+nums[i];

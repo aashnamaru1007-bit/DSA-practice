@@ -8,7 +8,7 @@ public class secondlargest {
         for (int i = 0; i < 5; i++) {
             n[i] = sc.nextInt();
         }
-        int slargest = -1;
+        int slargest = Integer.MIN_VALUE;
         int largest = n[0];
         for(int i=1;i<5;i++){
            if(n[i]>largest){
@@ -19,6 +19,7 @@ public class secondlargest {
                slargest=n[i];
            }
         }
-        System.out.println(largest+"\n"+slargest);
+        System.out.println(largest);
+        System.out.println((slargest==Integer.MIN_VALUE)? -1 : slargest);
     }
 }
